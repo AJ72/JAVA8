@@ -14,8 +14,9 @@ public class Producer extends Thread {
             try {
                 this.c.produce_item(i);
             } catch (Exception e1) {
-                // TODO Auto-generated catch block
-                e1.printStackTrace();
+
+                System.out.println(e1);
+
             }
             try {
                 Thread.sleep(1000);

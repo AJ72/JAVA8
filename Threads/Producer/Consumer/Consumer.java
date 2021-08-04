@@ -13,8 +13,9 @@ public class Consumer extends Thread {
             try {
                 this.c.consume_item();
             } catch (Exception e1) {
-                // TODO Auto-generated catch block
-                e1.printStackTrace();
+
+                System.out.println(e1);
+
             }
             try {
                 Thread.sleep(2000);
